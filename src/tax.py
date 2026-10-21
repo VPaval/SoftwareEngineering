@@ -9,7 +9,6 @@ The code below is deliberately clean, PEP 8-compliant and fully type-annotated,
 so it gives you a GREEN baseline to start from.
 """
 
-
 # --- Thresholds (loosely inspired by UK figures) -------------------------
 LOW_INCOME_THRESHOLD = 12_570  # UK personal allowance (2024/25)
 MID_INCOME_THRESHOLD = 25_000  # upper edge of the partial band
@@ -32,7 +31,7 @@ def calculate_allowance(
       * disabled                    -> +£600  (disability supplement)
 
     Raises:
-      ValueError: if income is negative.
+    ValueError: if income is negative.
     """
     if income < 0:
         raise ValueError("Income cannot be negative")
